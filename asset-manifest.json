@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/laurentrega_11_10082022/static/css/main.abd64e84.css",
+    "main.js": "/laurentrega_11_10082022/static/js/main.b1f451d6.js",
+    "index.html": "/laurentrega_11_10082022/index.html",
+    "main.abd64e84.css.map": "/laurentrega_11_10082022/static/css/main.abd64e84.css.map",
+    "main.b1f451d6.js.map": "/laurentrega_11_10082022/static/js/main.b1f451d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.b1f451d6.js"
+  ]
+}
