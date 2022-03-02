@@ -6,20 +6,20 @@ const Navigation = () => {
   return (
  
     <>
-        <div className="nav">
         <nav>
-          <ul>
-            <NavLink to="/">
-                Accueil
+          <ul className="nav justify-content-end">
+          <li className="nav-item"> 
+            <NavLink to="laurentrega_11_10082022/" className={(nav) => nav.isActive ? "nav-active" : ""}>
+              Accueil 
             </NavLink>
-            <NavLink to="a-propos">
-              À propos
+          </li>
+          <li className="nav-item"> 
+            <NavLink to="laurentrega_11_10082022/a-propos" className={(nav) => nav.isActive ? "nav-active" : ""}>
+               À propos 
             </NavLink>
-            
+          </li>
           </ul>
         </nav>
-        </div>
-   
     </>         
 
   );

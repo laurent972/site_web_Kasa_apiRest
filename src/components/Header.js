@@ -7,9 +7,8 @@ import Navigation from './Navigation';
 
 const header = () => {
   return (
-    <div>
-    
-        <Logo />
+    <div className='header'>
+    <Logo />
      <Navigation />
     </div>
   );

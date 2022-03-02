@@ -1,9 +1,12 @@
 import React from 'react';
+import Card from '../components/Card';
+import Logement from '../components/Logement';
 
 const home = () => {
   return (
-    <div>
-        <h1>Home</h1>
+    <div className='container-fluid home-page'>
+        <Logement />
+       
     </div>
   );
 };

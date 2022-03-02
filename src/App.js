@@ -1,5 +1,3 @@
-import './styles/App.css';
-
 import React from 'react';
 import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,21 +9,17 @@ import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <>
-     
+    <div className="container-fluid">
       <BrowserRouter>
        <Header />
         <Routes>
-            <Route exact path="/" element={ <Home /> } />
-            <Route exact path="/a-propos" element = { <Apropos />} />
-            <Route exact path="/fiche-logement" element = { <Fiche />} />
+            <Route exact path="/laurentrega_11_10082022" element={ <Home /> } />
+            <Route exact path="laurentrega_11_10082022/a-propos" element = { <Apropos />} />
+            <Route exact path="laurentrega_11_10082022/fiche-logement" element = { <Fiche />} />
             <Route path="*" element = { <NotFound /> } />
         </Routes>
       </BrowserRouter>
-
-    </>
-
-
+    </div>
   );
 };
 
