@@ -14,19 +14,13 @@ const Logement = () => {
     .then((data) => setLogementsData(data.data))
   },[])
 
-
   return (
-
     <div className="row">
-      {console.log(LogementsData)}
       {LogementsData.map((logement) => (
-         
          <Card key={logement.id} logement={logement} />
-       
-      )
+       )
       )}
     </div>
-  
   );
 };
 

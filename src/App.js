@@ -7,6 +7,7 @@ import Fiche from './pages/Fiche';
 import NotFound from './pages/NotFound';
 
 
+
 const App = () => {
   return (
     <div className="container-fluid">
@@ -15,8 +16,8 @@ const App = () => {
         <Routes>
             <Route exact path="/laurentrega_11_10082022" element={ <Home /> } />
             <Route exact path="laurentrega_11_10082022/a-propos" element = { <Apropos />} />
-            <Route exact path="laurentrega_11_10082022/fiche-logement" element = { <Fiche />} />
-            <Route path="*" element = { <NotFound /> } />
+            <Route  path="laurentrega_11_10082022/fiche-logement/:id" element = { <Fiche />} />
+            <Route path="laurentrega_11_10082022/*" element = { <NotFound /> } />
         </Routes>
       </BrowserRouter>
     </div>

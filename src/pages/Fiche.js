@@ -1,11 +1,30 @@
-import React from 'react';
 
-const fiche = () => {
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Detail from '../components/Detail';
+
+
+const Fiche = () => {
+  const {id} = useParams();
+  const [LogementData, setLogementData] = useState([]);
+
+  useEffect(()=> {
+    axios
+    .get("../data/logements.json")
+    .then((data) => setLogementData(data.data))
+  },[])
+
   return (
-    <div>
-        <h1>Fiche</h1>
+    <div className="row">
+      {LogementData
+      .filter(logement => logement.id.includes(id))
+      .map((logement)=>(
+        <Detail key={logement.id} logement={logement}/> 
+       ))}
+       
     </div>
   );
 };
 
-export default fiche;
+export default Fiche;

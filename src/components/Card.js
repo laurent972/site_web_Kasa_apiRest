@@ -1,18 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const card = (props) => {
 
   const {logement} = props;
 
   return (
-    <div className="col-sm-4">
+    <article className="col-sm-4">
       <div className="card bg-dark text-white">
         <img className="card-img" src={logement.cover} alt={logement.title} />
-        <div class="card-img-overlay">
-         <h4 class="card-title">{logement.title}</h4>
+        <div className="card-img-overlay">
+         <h4 className="card-title">{logement.title}</h4>
+         <Link to={`fiche-logement/${logement.id}`}>
+           Link
+         </Link>
         </div>
       </div>
-    </div>
+    </article>
 
   );
 };
