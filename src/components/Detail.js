@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from './Slider';
 
 const Detail = (props) => {
 
@@ -6,13 +7,10 @@ const Detail = (props) => {
   console.log(props);
 
   return (
-    <div>
-      <img src={logement.cover} alt={logement.title} />
-
+    <>
+ 
+      <Slider pictures={logement.pictures}/>
       
-      {logement.pictures.map((picture)=>(
-          <img src={picture} alt="" key={picture}/>
-      ))}
 
        <h2 className="card-title">{logement.title}</h2>
       <h4>{logement.location}</h4>
@@ -39,7 +37,7 @@ const Detail = (props) => {
       </div>
 
        
-    </div>
+    </>
   );
 };
 

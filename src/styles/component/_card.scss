@@ -1,0 +1,28 @@
+article{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  height:400px;
+  width: 400px;
+  background-size:cover;
+  border: 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .card-img-overlay{
+    background: rgb(45,30,30);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    display: flex;
+    align-items: end;
+
+    h4{
+      color:$blanc;
+      font-size: 1.3em;
+      a{
+        color: $blanc;
+      }
+    }
+  }
+}

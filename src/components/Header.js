@@ -7,10 +7,10 @@ import Navigation from './Navigation';
 
 const header = () => {
   return (
-    <div className='header'>
+    <header className='header' aria-label='header'>
     <Logo />
      <Navigation />
-    </div>
+    </header>
   );
 };
 

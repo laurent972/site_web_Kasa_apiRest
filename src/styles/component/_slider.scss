@@ -1,0 +1,41 @@
+.slider{
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  .arrowLeft{
+    position: absolute;
+    top:50%;
+    left: 32px;
+    font-size: 3rem;
+    color: blue;
+    svg{
+      filter: drop-shadow(4px 1px 12px  rgba(24, 4, 4, 0.5));
+    }
+ 
+  }
+  .arrowRight{
+    position: absolute;
+    top:50%;
+    right: 32px;
+    font-size: 3rem;
+    color: blue;
+    svg{
+      filter: drop-shadow(4px 1px 12px  rgba(53, 8, 8, 0.5));
+    }
+
+  }
+
+  .slide{
+      opacity: 0;
+      transition-duration: 1s ease-in-out;
+
+      &.active{
+        opacity: 1;
+        transition-duration: 1s;
+      }
+  }
+
+}
