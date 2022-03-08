@@ -3,3 +3,11 @@ body{
   color: $col-1;
   font-family: 'Montserrat', 'Arial', sans-serif;
 }
+
+.row> img{
+  width: auto;
+}
+
+.loader{
+  text-align: center;
+}

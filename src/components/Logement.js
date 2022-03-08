@@ -7,19 +7,36 @@ import Card from './Card';
 const Logement = () => {
 
   const [LogementsData, setLogementsData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(()=> {
+   useEffect(() => {
+      
     axios
     .get("./data/logements.json")
-    .then((data) => setLogementsData(data.data))
-  },[])
+    .then((res)=> {
+      setLogementsData(res.data)
+      setLoading(false)
+    })
+  
+  }, [setLogementsData]);
+
 
   return (
     <div className="row">
-      {LogementsData.map((logement) => (
-         <Card key={logement.id} logement={logement} />
-       )
-      )}
+      {loading &&
+        <span className='loader mt-5'>
+         <img src={require("../assets/Settings.gif")} alt="loading"  height={40} width={40} />
+        </span>
+      }
+
+      {!loading && 
+        <>
+          {LogementsData.map((logement) => (
+              <Card key={logement.id} logement={logement} />
+            )
+            )}
+        </>
+      }
     </div>
   );
 };
