@@ -1,0 +1,39 @@
+.collap{
+  background:$softgray;
+  width: 100%;
+
+  &-hide{
+    transform: translate(0,-150px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 120ms linear 300ms, opacity 300ms;
+  }
+  &-show{
+    padding: 1.5em;
+    transform: translate(0,0);
+    visibility: visible;
+    opacity: 1;
+    transition: all 0s linear 0s, opacity 300ms;
+  }
+}
+
+.collap-Elem{
+  background: $col-1;
+  color: $blanc;
+  padding: 0.8em 1.5em;
+  border-radius: 10px;
+  &.false{
+    
+    background-image:url('../../assets/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    background-size: 20px auto;
+  }
+  &.true{
+   
+    background-image:url('../../assets/arrow2.png');
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    background-size: 20px auto;
+  }
+}

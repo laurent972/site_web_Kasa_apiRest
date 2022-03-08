@@ -1,4 +1,5 @@
 import React from 'react';
+import Collapse from './Collapse';
 import Slider from './Slider';
 
 const Detail = (props) => {
@@ -26,8 +27,8 @@ const Detail = (props) => {
      <span>{logement.host.name}</span>
      <span><img src={logement.host.picture} alt="" /></span>
      
-      <div>
-      {logement.description} 
+      <div className='description'>
+      <Collapse description={logement.description} />
       </div>
 
       <div>
@@ -35,6 +36,8 @@ const Detail = (props) => {
           <p key={equipement}>{equipement}</p>
       ))} 
       </div>
+
+      <Collapse />
 
        
     </>

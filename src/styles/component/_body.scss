@@ -4,6 +4,11 @@ body{
   font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
+a:hover{
+  color: $col-1;
+  opacity: 0.85;
+}
+
 .row> img{
   width: auto;
 }

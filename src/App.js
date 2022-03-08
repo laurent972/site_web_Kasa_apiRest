@@ -5,12 +5,13 @@ import Home from './pages/Home';
 import Apropos from './pages/Apropos';
 import Fiche from './pages/Fiche';
 import NotFound from './pages/NotFound';
+import Footer from './components/Footer';
 
 
 
 const App = () => {
   return (
-    <div className="container-fluid">
+    <>
       <BrowserRouter>
        <Header />
         <Routes>
@@ -21,7 +22,9 @@ const App = () => {
             <Route path="/*" element = { <Navigate replace to='laurentrega_11_10082022/404' /> } />
         </Routes>
       </BrowserRouter>
-    </div>
+      <Footer />
+    </>
+    
   );
 };
 

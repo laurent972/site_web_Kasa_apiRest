@@ -1,4 +1,22 @@
-.nav-active{
-  color: green;
-  
+.nav-item a{
+  color: $col-1;
+  font-size: 1.4em;
+  font-weight: 500;
+  opacity: 1;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+
+  &:hover{
+    color: $col-1;
+    transition-duration: 1s;
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+
+  &.nav-active{
+    text-decoration: underline;
+    color: $col-1;
+  }
 }
+

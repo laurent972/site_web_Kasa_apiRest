@@ -1,0 +1,16 @@
+.not-found{
+  display: block;
+  text-align: center;
+
+  &--404{
+    font-size: 12em;
+    font-weight: 700;
+  }
+
+  &--sentence{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 4em;
+  }
+ 
+}
