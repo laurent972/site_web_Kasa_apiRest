@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/laurentrega_11_10082022/static/css/main.0e07df14.css",
-    "main.js": "/laurentrega_11_10082022/static/js/main.b56658d8.js",
+    "main.css": "/laurentrega_11_10082022/static/css/main.1f278ba8.css",
+    "main.js": "/laurentrega_11_10082022/static/js/main.c2feb39d.js",
+    "static/media/Settings.gif": "/laurentrega_11_10082022/static/media/Settings.816e2b9b9cf8e61a5db0.gif",
     "index.html": "/laurentrega_11_10082022/index.html",
-    "main.0e07df14.css.map": "/laurentrega_11_10082022/static/css/main.0e07df14.css.map",
-    "main.b56658d8.js.map": "/laurentrega_11_10082022/static/js/main.b56658d8.js.map"
+    "main.1f278ba8.css.map": "/laurentrega_11_10082022/static/css/main.1f278ba8.css.map",
+    "main.c2feb39d.js.map": "/laurentrega_11_10082022/static/js/main.c2feb39d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e07df14.css",
-    "static/js/main.b56658d8.js"
+    "static/css/main.1f278ba8.css",
+    "static/js/main.c2feb39d.js"
   ]
 }
