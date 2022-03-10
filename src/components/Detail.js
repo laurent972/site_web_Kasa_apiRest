@@ -2,6 +2,8 @@ import React from 'react';
 import Collapse from './Collapse';
 import Slider from './Slider';
 
+import Rate from './Rate';
+
 const Detail = (props) => {
 
   const {logement} = props;
@@ -12,33 +14,38 @@ const Detail = (props) => {
  
       <Slider pictures={logement.pictures}/>
       
+      <div className="row">
+        <div className="col">
+            <h2 className='fiche-titre'>{logement.title}</h2>
+            <div className='location mb-3'>{logement.location}</div>
 
-       <h2 className="card-title">{logement.title}</h2>
-      <h4>{logement.location}</h4>
-
-      {logement.tags.map((tag)=>(
-          <p className="tag" key={tag}>{tag}</p>
-      ))}
+            <div className="tag-fiche">
+            {logement.tags.map((tag)=>(
+                <p className="tag" key={tag}>{tag}</p>
+            ))}
+            </div>
+          
+          </div>
+        <div className="col host">
       
-      <div>
-      {logement.rating} 
+           <span>{logement.host.name}</span>
+           <img src={logement.host.picture} alt="" />
+      
+          <div className='rating'>
+            
+            <Rate rate={logement.rating} />       
+           
+          </div>
+          </div>  
       </div>
-      
-     <span>{logement.host.name}</span>
-     <span><img src={logement.host.picture} alt="" /></span>
      
-      <div className='description'>
-      <Collapse description={logement.description} />
-      </div>
-
-      <div>
-      {logement.equipments.map(equipement => (
-          <p key={equipement}>{equipement}</p>
-      ))} 
-      </div>
-
-      <Collapse />
-
+     <div className="row">
+    
+          <Collapse Description ={logement.description} />
+      
+          <Collapse Equipements={logement.equipments} />
+      
+    </div>
        
     </>
   );

@@ -16,7 +16,7 @@ const Fiche = () => {
   },[])
 
   return (
-    <div className="row">
+    <div className="container-lg fiche">
       {LogementData
       .filter(logement => logement.id.includes(id))
       .map((logement)=>(

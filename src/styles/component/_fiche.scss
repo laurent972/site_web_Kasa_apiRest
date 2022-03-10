@@ -1,0 +1,52 @@
+.fiche{
+
+  h2{
+    &.fiche-titre{
+      margin: 0;
+    }
+  }
+  
+  .location{
+    font-weight: 500;
+    font-size: 1.1em;
+    display: block;
+  }
+
+  .tag-fiche{
+    display: flex;
+    flex-wrap: wrap;
+    .tag{
+      margin-right: 1em;
+      border-radius: 30px;
+      background: $col-1;
+      color: $blanc;
+      padding: 0.35em 1.3em;
+      font-size: 0.9em;
+    }
+  }
+
+  .host{
+    text-align: right;
+    img{
+      border-radius: 100px;
+      margin-left: 15px;
+      width: 90px;
+      height: 90px;
+    }
+
+    span{
+      font-size: 1.3em;
+      overflow-wrap: break-word;
+      font-weight: 500;
+    
+    }
+  }
+
+  .rating{
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+}
