@@ -16,14 +16,14 @@ const Fiche = () => {
   },[])
 
   return (
-    <div className="container-lg fiche">
+    <section className="container-lg fiche">
       {LogementData
       .filter(logement => logement.id.includes(id))
       .map((logement)=>(
         <Detail key={logement.id} logement={logement}/> 
        ))}
        
-    </div>
+    </section>
   );
 };
 

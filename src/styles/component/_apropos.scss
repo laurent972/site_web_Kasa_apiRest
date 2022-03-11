@@ -1,0 +1,9 @@
+.a-propos{
+  .content{
+    width: 70%;
+    margin: 0 auto;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+  }
+  }
+}

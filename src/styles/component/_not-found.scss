@@ -5,6 +5,9 @@
   &--404{
     font-size: 12em;
     font-weight: 700;
+    @media screen and (max-width: 800px) {
+      font-size: 8em;
+  }
   }
 
   &--sentence{

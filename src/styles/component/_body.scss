@@ -16,3 +16,10 @@ a:hover{
 .loader{
   text-align: center;
 }
+
+.content-articles{
+  background-color: $softgray;
+  padding: $gap;
+  margin:$gap*1.5 $gap/2;
+  border-radius: 25px;
+}

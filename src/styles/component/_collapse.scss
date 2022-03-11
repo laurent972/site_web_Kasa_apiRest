@@ -2,18 +2,28 @@
   background:$softgray;
   width: 100%;
 
+  
+  ul{
+    list-style: none;
+    padding-left:0;
+  }
+
   &-hide{
     transform: translate(0,-150px);
     visibility: hidden;
     opacity: 0;
     transition: all 0ms linear 0ms, opacity 100ms;
+    height: 0;
   }
   &-show{
     padding: 1.5em;
-    transform: translate(0,0);
+    transform: translate(0,-10px);
     visibility: visible;
     opacity: 1;
     transition: all 0s linear 0s, opacity 100ms;
+    position: relative;
+    z-index: -1;
+    height: auto;
   }
 }
 
@@ -22,6 +32,9 @@
   color: $blanc;
   padding: 0.8em 1.5em;
   border-radius: 10px;
+  cursor: pointer;
+
+
   &.false{
     
     background-image:url('../../assets/arrow.png');

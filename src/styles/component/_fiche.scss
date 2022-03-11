@@ -25,9 +25,38 @@
     }
   }
 
+  .detail-title{
+    @media screen and (max-width: 680px) {
+      width: 100%;
+      flex: auto;
+  }
+  }
+
   .host{
     text-align: right;
-    img{
+      display: grid; 
+      grid-template-columns: 3fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0.5em 0.5em; 
+      grid-template-areas: 
+        ". ."
+        "stars stars"; 
+        justify-items: end; 
+        align-items: center; 
+
+      @media screen and (max-width: 680px) {
+          width: 100%;
+          flex: auto;
+          grid-template-areas: 
+          "stars stars . .";
+          justify-items: start; 
+         
+      }
+      
+
+    .rating { grid-area: stars; }
+
+    .portrait{
       border-radius: 100px;
       margin-left: 15px;
       width: 90px;
@@ -38,15 +67,20 @@
       font-size: 1.3em;
       overflow-wrap: break-word;
       font-weight: 500;
-    
+      display: block;
+      width: 95px;
     }
   }
 
-  .rating{
-    img{
-      width: 20px;
-      height: 20px;
+    .eq,
+    .description{
+      @media screen and (max-width: 680px) {
+        width: 100%;
+        flex: auto;
+        margin-bottom: $gap;
+      }
+      
     }
-  }
+ 
 
 }

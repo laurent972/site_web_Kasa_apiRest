@@ -22,7 +22,7 @@ const Logement = () => {
 
 
   return (
-    <div className="row">
+    <div className="row content-articles">
       {loading &&
         <span className='loader mt-5'>
          <img src={require("../assets/Settings.gif")} alt="loading"  height={40} width={40} />

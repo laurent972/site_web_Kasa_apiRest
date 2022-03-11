@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = (props) => {
+
   return (
-    <div className="banner" style={{backgroundImage:`url('./IMG.png')`}}>
-     <p>Chez vous, partout et ailleurs</p>
+    <div className="banner" style={{backgroundImage:`url(${props.link})`}} role="banner" aria-label='banner'>
+     <p>{props.text}</p>
     </div>
   );
 };
