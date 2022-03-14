@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/laurentrega_11_10082022/static/css/main.42d55489.css",
-    "main.js": "/laurentrega_11_10082022/static/js/main.7347be2c.js",
+    "main.css": "/laurentrega_11_10082022/static/css/main.8d48b909.css",
+    "main.js": "/laurentrega_11_10082022/static/js/main.c4b9d2fd.js",
     "static/media/MaskGroup.png": "/laurentrega_11_10082022/static/media/MaskGroup.d387977f165cfdb95686.png",
     "static/media/IMG.png": "/laurentrega_11_10082022/static/media/IMG.024f945a990ae17b81b7.png",
     "static/media/Settings.gif": "/laurentrega_11_10082022/static/media/Settings.816e2b9b9cf8e61a5db0.gif",
+    "static/media/logo_kasa.svg": "/laurentrega_11_10082022/static/media/logo_kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
     "index.html": "/laurentrega_11_10082022/index.html",
-    "main.42d55489.css.map": "/laurentrega_11_10082022/static/css/main.42d55489.css.map",
-    "main.7347be2c.js.map": "/laurentrega_11_10082022/static/js/main.7347be2c.js.map"
+    "main.8d48b909.css.map": "/laurentrega_11_10082022/static/css/main.8d48b909.css.map",
+    "main.c4b9d2fd.js.map": "/laurentrega_11_10082022/static/js/main.c4b9d2fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.42d55489.css",
-    "static/js/main.7347be2c.js"
+    "static/css/main.8d48b909.css",
+    "static/js/main.c4b9d2fd.js"
   ]
 }
