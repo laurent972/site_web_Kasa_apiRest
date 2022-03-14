@@ -11,6 +11,10 @@ article{
   border-radius: 10px;
   overflow: hidden;
 
+  @media screen and (max-width: 800px) {
+    height:200px; 
+  }
+
   .card-img-overlay{
     background: rgb(45,30,30);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);

@@ -52,6 +52,16 @@
           justify-items: start; 
          
       }
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        flex: auto;
+        grid-template-areas: 
+        ". ."
+        "stars stars" ;
+        justify-items: start; 
+       
+    }
       
 
     .rating { grid-area: stars; }

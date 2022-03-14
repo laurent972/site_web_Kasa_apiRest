@@ -1,6 +1,12 @@
 .nav-item a{
   color: $col-1;
   font-size: 1.2em;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9em;
+    padding: 0.5rem 0.35rem;
+  }
+
   font-weight: 500;
   opacity: 1;
   text-decoration: none;
@@ -18,5 +24,14 @@
     text-decoration: underline;
     color: $col-1;
   }
+}
+
+.navbar-brand{
+  img{
+    @media screen and (max-width: 800px) {
+      width:115px;
+    }
+  }
+
 }
 

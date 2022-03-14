@@ -12,11 +12,7 @@ const Collapse = (props) => {
       <div className='mt-3 mb-3' >
           <div  className={show ? 'collap-Elem title true' : 'collap-Elem title false'} onClick={()=>setShow(!show)}>{props.titre}</div>   
           <div className={show ? 'collap collap-show' : 'collap collap-hide'}>
-            {isArray && 
-              <ul>
-                {props.content.map((prop, index)=><li key={index}>{prop}</li>)}
-              </ul>
-            }
+            { isArray ? <ul> {props.content.map((prop, index)=><li key={index}>{prop}</li>)}</ul> : <>{props.content}</>}
           </div>
       </div>
   </>
