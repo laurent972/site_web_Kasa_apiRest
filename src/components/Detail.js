@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from './Slider';
 
 import Rate from './Rate';
+import Collapse from './Collapse';
 
 const Detail = (props) => {
   const [show, setShow] = useState(false);
@@ -33,22 +34,14 @@ const Detail = (props) => {
           </div>  
       </div>
      
-     <div className="row">
-            <div className='col description' >
-              <div  className={show ? 'collap-Elem title true' : 'collap-Elem title false'} onClick={()=>setShow(!show)}>Description</div>   
-              <div className={show ? 'collap collap-show' : 'collap collap-hide'}>{logement.description}</div>
-            </div>
+        <div className="row">
+            <div className='col description'>
+                <Collapse titre='Description' content={logement.description}/>
+              </div>
             <div className='col eq' >
-            <div  className={showE ? 'collap-Elem title true' : 'collap-Elem title false'} onClick={()=>setShowE(!showE)}>Equipments</div>  
-            <div className={showE ? 'collap collap-show' : 'collap collap-hide'}> 
-              <ul>
-              {logement.equipments.map((data,index)=>(
-                  <li key={index} >{data}</li>
-              ))}
-              </ul>
-            </div> 
-          </div>
-    </div>
+              <Collapse titre='Equipements' content={logement.equipments}/>
+            </div>
+        </div>
        
     </>
   );

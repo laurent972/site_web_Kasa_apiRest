@@ -20,6 +20,7 @@ const App = () => {
             <Route  path="laurentrega_11_10082022/fiche-logement/:id" element = { <Fiche />} />
             <Route path="laurentrega_11_10082022/404" element = { <NotFound /> } />
             <Route path="*" element = { <Navigate replace to='laurentrega_11_10082022/404' /> } />
+            <Route path="/*" element = { <Navigate replace to='laurentrega_11_10082022/404' /> } />
         </Routes>
       </BrowserRouter>
       <Footer />

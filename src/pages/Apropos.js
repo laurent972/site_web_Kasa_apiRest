@@ -30,7 +30,6 @@ const Apropos = () => {
         <Collapse key={index} titre={content.title} content={content.text}/>
       ))}
         
-      
       </div>
     </section>
   );
