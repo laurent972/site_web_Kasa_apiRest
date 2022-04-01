@@ -1,3 +1,6 @@
+#View
+https://laurent972.github.io/laurentrega_11_10082022/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
