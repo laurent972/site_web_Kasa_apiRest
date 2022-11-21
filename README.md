@@ -1,5 +1,4 @@
 #View
-https://laurent972.github.io/laurentrega_11_10082022/
 
 # Getting Started with Create React App
 
